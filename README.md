@@ -1,6 +1,11 @@
 ![](https://github.com/gSchool/pokemon-node/blob/master/public/images/pokemon-logo.png)
 
+### Important note before starting:
+The styling in the views index file needs to be copy pasted to the other files you make throughout the project to keep it consistent. If you want to do it with ejs layouts that's also a option.
+
 ## WELCOME to the Q2 Assessment!
+
+
 
 Move deliberately and methodically through the stories provided below.
 
@@ -374,22 +379,3 @@ exactly match, but it should look as good or preferably BETTER than the mockups:
 __Deployment__
 * https://github.com/gSchool/intro-to-deploying-express-pg-apps-to-heroku
 ( GO TO GITHUB BRANCH g29 to see the way we've been doing it )
-
-__Knex and Deployment__
-* https://github.com/gSchool/knex-migrations-and-deployment
-
-__CRUD with KNEX__
-* https://github.com/gSchool/pirates-crud-with-pg-knex-raw
-
-__COOKIES__
-* https://github.com/gSchool/auth_sandbox  ( AUTH SANDBOX )
-* https://learn.galvanize.com/redirects/articles/3610  ( VIEW VIDEO #3 ON COOKIES )
-* Nmuta's YouTube channel cookies live coding videos ( 9 videos ) : https://www.youtube.com/channel/UCxM6--J9pxeS3geqe1MVxsg
-
-https://www.youtube.com/watch?v=h3vlPfc0Als&t=9s
-
-https://www.youtube.com/watch?v=iPDUW73HKV0
-
-https://www.youtube.com/watch?v=tGRKEkeajQg
-
-... etc... See COOKIES BIKE DEPOT series for all 9 videos
