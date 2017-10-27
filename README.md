@@ -1,4 +1,4 @@
-![](https://github.com/gSchool/pokemon-node/blob/master/public/images/pokemon-logo.png)
+<!-- ![](https://github.com/gSchool/pokemon-node/blob/master/public/images/pokemon-logo.png)
 
 ### Important note before starting:
 The styling in the views index file needs to be copy pasted to the other files you make throughout the project to keep it consistent. If you want to do it with ejs layouts that's also a option.
@@ -109,9 +109,9 @@ When I visit '/pokemon'
 Then I see a list of all Pokemón and their properties
 And I see a link to DELETE
 And I see a link to EDIT
-```
+``` -->
 
-__#6__
+<!-- __#6__
 
 ```
 When I visit the Pokemón home page
@@ -126,8 +126,8 @@ __wireframe not shown, implement your own ideas.__
 __#7__
 
 Trainers can acquire Pokemón that will belong exclusively to them.
-One trainer can have many Pokemón, but each Pokemón belongs to only one trainer.
-
+One trainer can have many Pokemón, but each Pokemón belongs to only one trainer. -->
+<!--
 ```
 When I visit the Pokemón home page
 And I see all Pokemón
@@ -136,9 +136,9 @@ Then I am taken to a form
 And the form is prefilled with information for that Pokemón
 And I see the name of that Pokemón's trainer
 And that name is in a drop down menu that also has the names of all the other trainers
-```
+``` -->
 
-__#8__
+<!-- __#8__
 
 ```
 When I submit an edit form for a Pokemón
@@ -154,7 +154,7 @@ And I see all Pokemón
 And I click the 'DELETE' link for a Pokemón
 Then I am redirected to the Pokemón home page
 And that Pokemón is no longer listed
-```
+``` -->
 
 
 _OVERVIEW of STORY # 10_
@@ -219,7 +219,7 @@ __#2__
 When I click on the name of a Trainer
 Then I am taken to a show page
 And I see the name of that Trainer
-And I see all of the Pokemon they are currently training
+  And I see all of the Pokemon they are currently training
 ```
 
 ### In the Gym
@@ -328,44 +328,6 @@ And I click the 'reset' button (or link)
 Then all the Pokemón are removed from the gym
 ```
 
-### Stretch Goals
-
-__#1__
-
-```
-As a user
-When I make 2 Pokemón battle
-Then the winner's CP is incremented by 20
-```
-
-__#2__
-
-* Write a migration that adds an image field to the Pokemón table that takes an
-image url.
-
-* Display the image on both the gym and the Pokemón index page.
-
-
-## WIREFRAMES
-
-You can use these mockups/wireframes as a reference. Your design does not have to
-exactly match, but it should look as good or preferably BETTER than the mockups:
-
-## TRAINERS INDEX
-
-![Trainers - Index](https://github.com/gSchool/pokemon-node/blob/master/mockups/trainers-index.png)
-
-## TRAINERS SHOW PAGE /trainers/:id
-
-![Trainers - Show](https://github.com/gSchool/pokemon-node/blob/master/mockups/trainers-show.png)
-
-## POKEMÓN INDEX
-
-![Pokemon - Index](https://github.com/gSchool/pokemon-node/blob/master/mockups/pokemon-index.png)
-
-## GYM
-
-![Gym](https://github.com/gSchool/pokemon-node/blob/master/mockups/gym.png)
 
 
 ## How to Submit Your Assessment

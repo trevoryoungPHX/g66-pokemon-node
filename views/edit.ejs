@@ -37,64 +37,28 @@
           <span class="pokemon-mobile-title mdl-layout-title">
             <img class="pokemon-logo-image" src="images/pokemon-logo.png">
           </span>
-
-
         </div>
       </div>
       <div class="pokemon-content mdl-layout__content">
         <div class="app-content pokemon-wear-section">
 
-          <button type="button" name="button" id="add_new">Add New Pokemon</button>
-
-          <script type="text/javascript">
-             var btn = document.getElementById("add_new");
-             btn.addEventListener("click", function(){
-            document.getElementById("newPokeForm").style.display = "block";
-             })
-          </script>
-          <form action="/pokemon" method="post" id = "newPokeForm">
+          <h1 class = "pokeHeader">Updating <%= pokemon.name %></h1>
+          <form action="/edit/<%= pokemon.id %>" method="post" id = "updatePokeForm">
             <label for="name">Name</label>
-            <input type="text" id = "name" name="name" placeholder="Name of Pokemon">
-            <label for="trainer_id">Trainer ID</label>
-            <input type="number" id = "trainer_id" name="trainer_id" placeholder="Trainer ID">
+            <input type="text" id = "name" name="name" value="<%= pokemon.name %>">
+            <label for="trainersname">Trainer Name</label>
+            <select name="trainer_id" id = "trainersname">
+              <% for(var i = 0; i<trainers.length; i++){ %>
+              <option value="<%=trainers[i].id %>"><%= trainers[i].name %></option>
+              <% } %>
+            </select>
             <label for="cp">Combat Power</label>
-            <input type="number" id = "cp" name="cp" placeholder="Combat Power">
+            <input type="number" id = "cp" name="cp" value="<%= pokemon.cp %>">
             <label for="gym">Currently In Gym?</label>
             <input type="radio" id = "gym" name="in_gym" value="true">True</imput>
-            <input type="radio" id = "gym" name="in_gym" value="false">False</input>
-            <input type="submit">
+            <input type="radio" id = "gym" name="in_gym" value="false" checked>False</input>
+            <input type="submit" value = "Edit">
           </form>
-          <br>
-          <br>
-          <table class = 'pokeTable'>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Trainer ID</th>
-                    <th>Combat Power</th>
-                    <th>In Gym?</th>
-                    <th>Edit Pokemon</th>
-                    <th>Delete Pokemon</th>
-
-                  </tr>
-                </thead>
-                <tbody>
-                  <% for(var i = 0; i<pokemon.length; i++){ %>
-                  <tr>
-                      <td><a href="/show/<%= pokemon[i].id %>"><%= pokemon[i].name %></a></td>
-                      <td><%= pokemon[i].trainer_id %></td>
-                      <td><%= pokemon[i].cp %></td>
-                      <td><%= pokemon[i].in_gym %></td>
-                      <td><a href="/edit/<%= pokemon[i].id %>">Edit</a></td>
-                      <td><a href="/delete/<%= pokemon[i].id %>">Delete</a></td>
-                    <% } %>
-                  </tr>
-                </tbody>
-              </table>
-        </div>
-
-        <footer class="pokemon-footer mdl-mega-footer">
-        </footer>
       </div>
     </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
