@@ -18,4 +18,8 @@ module.exports = function(app){
 
   app.get('/show/:id', index.show);
 
+  app.get('/trainers', index.viewAllTrainers);
+
+  app.get('/showTrainer/:id', index.showTrainer);
+
 }

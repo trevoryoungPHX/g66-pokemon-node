@@ -84,6 +84,29 @@ show: function(req, res, next) {
     .catch((err) => {
       console.error(err)
     });
-}
+},
+
+//View trainers on home trainers
+  viewAllTrainers: function(req, res, next) {
+    knex('trainers').then((data) => {
+        res.render('trainers', {trainers: data});
+      })
+      .catch((err) => {
+        console.error(err)
+      });
+    },
+
+    //Get to show trainerspage.
+    showTrainer: function(req, res, next) {
+      knex('trainers')
+        .where('trainers.id', req.params.id)
+        .then((data2)=>{
+          res.render('showTrainer', {trainers: data2[0]})
+        })
+        .catch((err) => {
+          console.error(err)
+        });
+    }
+
 
 }

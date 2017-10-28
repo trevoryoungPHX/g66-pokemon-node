@@ -203,7 +203,7 @@ Then I see a link 'remove from gym' next to that Pokemón
 And I do NOT see a link 'assign to gym' next to that Pokemón
 ```
 
-### Trainers
+<!-- ### Trainers
 
 __#1__
 
@@ -211,7 +211,7 @@ __#1__
 As a user
 When I visit /trainers
 Then I see a list of all Trainers
-```
+``` -->
 
 __#2__
 
