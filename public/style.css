@@ -25,6 +25,11 @@
   width: 1000px;
 }
 
+#gymForm {
+  color: white;
+  width: 1000px;
+}
+
 .pokeTable {
   border: 2px solid white;
   border-radius: 25px;

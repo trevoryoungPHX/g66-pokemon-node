@@ -41,27 +41,27 @@
       </div>
       <div class="pokemon-content mdl-layout__content">
         <div class="app-content pokemon-wear-section">
-          <h1 class = "pokeHeader"><%= trainers.name %></h1>
-          <table class = 'pokeTable'>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>ID</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                      <td><%= trainers.name %></td>
-                      <td><%= trainers.id %></td>
-                  </tr>
-                </tbody>
-              </table>
-            <h3 class = 'trainerPokemon'><%= trainers.name %>'s Pokemon</h1>
-            <div class = 'pokemonDiv'>
-              <!--insert logic here to show all pokemon to that particular trainer. Similar to join for viewing all trainers, except you will only show the pokomon for that trainer-->
-              <!-- Need to do a join of some sort-->
+          <h1 class = "pokeHeader">Gym</h1>
 
-            </div>
+
+          <form action="/gym" method="post" id = "gymForm">
+
+            <label for="pokemon1">Pokemon1</label>
+            <select id = "pokemom1" name="pokemon1" placeholder="">
+              <% for(var i = 0; i<pokemon.length; i++){ %>
+              <option value="<%=pokemon[i].id %>"><%= pokemon[i].name %></option>
+              <% } %>
+            </select>
+
+            <label for="pokemon2">Pokemon2</label>
+            <select id = "pokemom2" name="pokemon2" placeholder="">
+              <% for(var j = 0; j<pokemon.length; j++){ %>
+              <option value="<%=pokemon[j].id %>"><%= pokemon[j].name %></option>
+              <% } %>
+            </select>
+            <input type="submit" value="Battle!">
+
+          </form>
       </div>
     </div>
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>

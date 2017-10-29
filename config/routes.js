@@ -22,4 +22,6 @@ module.exports = function(app){
 
   app.get('/showTrainer/:id', index.showTrainer);
 
+  app.get('/gym', index.goToGym);
+
 }

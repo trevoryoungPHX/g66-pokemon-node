@@ -106,7 +106,17 @@ show: function(req, res, next) {
         .catch((err) => {
           console.error(err)
         });
-    }
+    },
+
+//Get to the gym.
+goToGym: function(req, res, next) {
+  knex('pokemon').then((data) => {
+      res.render('gym', {pokemon: data});
+    })
+    .catch((err) => {
+      console.error(err)
+    });
+  }
 
 
 }

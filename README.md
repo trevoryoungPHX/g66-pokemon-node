@@ -172,9 +172,6 @@ __EXAMPLE:__ If you have a Raichu with an id of 22 in the database and you click
 'assign to gym' then you would set a cookie p1 with a value of 22.
 
 
-__NOTE:__ Your database should _always_ be updated to have the current `in_gym`
-status of _all_ Pokemón.
-
 __#10__
 
 ```
